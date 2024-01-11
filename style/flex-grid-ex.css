@@ -11,16 +11,49 @@ body{
 }
 
 
+.header, .menu, .aside, .content, .advertise, .link, .footer {
+    background-color: red;
+    border-radius: 5px;
+    
+}
 
+.container{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto auto 50px;
+    gap: 10px;
+    grid-template-areas: 
+    
+    "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr lnk lnk"
+    "mnu mnu mnu ctn ctn ctn ctn ctn ctn asd asd asd"
+    "mnu mnu mnu ctn ctn ctn ctn ctn ctn adv adv adv"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr"
+    
+    ;
+}
 
-
-
-
-
-
-
-
-
+.header{
+    grid-area: hdr;
+}
+.menu{
+    grid-area: mnu;
+}
+.aside{
+    grid-area: asd;
+}
+.content{
+    grid-area: ctn;
+}
+.advertise{
+    grid-area: adv;
+}
+.link{
+    grid-area: lnk;
+}
+.footer{
+    grid-area: ftr;
+}
 
 
 
